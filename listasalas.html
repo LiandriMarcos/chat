@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Chats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #16181F;
+            color: #dcddde;
+        }
+        .chat-list-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .chat-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+        .chat-item {
+            background-color: #1b1e25;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-align: center;
+        }
+        .chat-item:hover {
+            background-color: #4f545c;
+            transform: translateY(-5px);
+        }
+        .chat-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: #434FFF;
+        }
+        .chat-info h5 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #fff;
+        }
+        .chat-info p {
+            margin: 10px 0 20px;
+            font-size: 1rem;
+            color: #b9bbbe;
+        }
+        .btn-join {
+            background-color: #434FFF;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-join:hover {
+            background-color: #434FFF;
+        }
+        h2 {
+            font-size: 2.5rem;
+            color: #fff;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container chat-list-container">
+    <h2>Escolha uma Sala de Chat</h2>
+    <div class="chat-list">
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-chat-dots-fill"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Chat Geral</h5>
+                <p>Converse sobre assuntos gerais com a comunidade.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-cpu-fill"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Tech Talk</h5>
+                <p>Discussões sobre tecnologia e inovação.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-lightning-fill"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Random</h5>
+                <p>Um espaço para conversas aleatórias e divertidas.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-music-note-beamed"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Música</h5>
+                <p>Fale sobre suas bandas e músicas favoritas.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-controller"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Games</h5>
+                <p>Debata sobre os últimos lançamentos e games clássicos.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+        <div class="chat-item">
+            <div class="chat-icon">
+                <i class="bi bi-camera-reels-fill"></i>
+            </div>
+            <div class="chat-info">
+                <h5>Filmes & Séries</h5>
+                <p>Compartilhe suas opiniões sobre filmes e séries.</p>
+            </div>
+            <a href="index.html" class="btn-join">Entrar</a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
